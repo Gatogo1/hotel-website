@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!---Fontawesome CDN-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" >
+
+    <!--JS AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+      <!-- owl carousel css link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  
+<!-- owl carousel theme.css link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">  
+
+<!-- owl carousel js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <!--video play button cdn-->
+ 
+  
+    <title>Gat media Hotel</title>
+</head>
+<body class="no-gutters">
+    <!--header Section start-->
+     <section style="  background-image: url('img/header-image.jpg') ;" class="m-0 p-0 text-center">
+        <!--Nan bar start-->
+        <nav class="navbar  navbar-expand-sm  navbar-light ">
+            <a class="navbar-brand text-white" href="#">Gat Hotel</a>
+            <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto topnav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reservation">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Resources
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#rooms">Rooms</a>
+                            <a class="dropdown-item" href="#conferences">Conferences</a>
+                            <a class="dropdown-item" href="#bar">Bar</a>
+                            <a class="dropdown-item" href="#pole">Pole</a>
+                        </div>
+                    </li>
+                    <li class="nav-item m-1 ">
+                        <a class="nav-link btn btn-primary text-white" type="button" href="#" data-toggle="modal" data-target="#myModal">Sign In</a>                  
+                    </li>
+                    <li class="nav-item m-1">
+                        <a class="nav-link btn btn-danger btn-sm text-white" type="button" href="#" data-toggle="modal" data-target="#myModal">Register</a>
+                    </li>
+                </ul>
+            </div>
+    
+                <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+    
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Customer Sign In</h4>
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                    </div>
+    
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form>
+                            <label class="sr-only" for="usrname">Username</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+    
+    
+                            <label class="sr-only" for="Password">Name</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon2"><i class="fa fa-key"></i></span>
+                                </div>
+                                <input id="Password" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
+                            </div>
+                        </form>
+                    </div>
+    
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" >Sign In</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+                
+    
+        </nav>
+        <!--Nan bar end-->
+
+        <!---welcome section start-->
+        <center>
+            <div  data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1500" class="  welcome text-white">
+            <h1  data-aos="fade-up"   class="">Welcome To Gat Media Hotel</h1>
+            <div typedtext class="">
+                <p data-aos="zoom-in-left">We are thrilled to have you here and invite you to experience an unforgettable stay at our luxurious hotel. </p><p> From the moment you arrive, our dedicated team will go above and beyond to ensure your every need is met. </p>
+            </div>
+            <a class=" btn warning mb-4  w-25 " type="button" href="#" data-toggle="modal" data-target="#myModal">Book now</a>
+        </div>
+
+        </center>
+        
+    
+        <!---welcome section start-->
+
+      
+
+     </section>
+    <!--header Section end-->
+
+
+
+    <!---Main body start-->
+    <!--Check in start-->
+    <div class="container-xxl">
+        <center>
+            <form class="form">
+                <h4 class="text-center">Check in</h4>
+                <div class="row no-gutters">
+                  <div class="col-sm-3 text-center text-white">
+                    <label for="inputEmail4">Check-in</label>
+                    <input type="date" class="form-control" placeholder="First name">
+                  </div>
+                  <div class="col-sm-3 text-center text-white">
+                    <label for="inputEmail4">Check-out</label>
+                    <input type="date" class="form-control" placeholder="First name">
+                  </div>
+                  
+                  <div class="col-sm-3 text-center text-white">
+                    <label for="inputState">Room</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-3">
+                    <button type="submit" class="btn btn-primary my-1 btn-sm">Submit</button>
+                  </div>
+    
+                  
+                </div>
+              </form>
+
+        </center>
+       
+    </div>
+
+    <!--Check in start-->
+  
+
+
+  
+      <!---Our Rooms start -->
+      <div style="margin-top: 40px;" class="container-xxl">
+        <center><h4 data-aos="fade-left" class=" room-head text-center">Rooms</h4></center>
+           <div   style="  background-image: url('img/room.png') ;"  class="our-rooms row no-gutters m-0 p-0 ">
+            <div class="owl-carousel owl-theme">
+            <!--item one start-->
+             <div data-aos="fade-left" class=" item rounded border pb-2">
+                <div class="img">
+                    <img src="img/pexels-pixabay-279746.jpg" alt="" />
+                    <div class="bottom-left"><button class="btn btn-primary btn-sm">Book Now</button></div>
+                </div>
+               
+                <div class="  text-center ">
+                    <h4 class="room-name">Luxury</h4>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <span class=" room-amount text-danger p-1 my-2  ">$100/night</span>
+                   
+                    <div class="amenities">
+                        <span class="room-icons"><i class="text-primary fa fa-bed" aria-hidden="true"></i> 1 bed</span>
+                        <span class="room-icons"><i class="fa fa-tint text-primary" aria-hidden="true"></i> 1 AC</span>
+                        <span class="room-icons"><i class="fa fa-desktop text-primary" aria-hidden="true"></i> 1 television</span>
+
+                    </div>
+                    
+
+
+                    
+                </div>
+                
+             </div>
+             <!--item one end-->
+
+             <!--item two start-->
+             <div data-aos="fade-left" class=" item rounded border pb-2">
+                <div class="img">
+                    <img src="img/img1.jpg" alt="" />
+                    <div class="bottom-left"><button class="btn btn-primary btn-sm">Book Now</button></div>
+                </div>
+               
+                <div class="  text-center ">
+                    <h4 class="room-name">Standard</h4>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star "></span>
+                    </div>
+                    <span class=" room-amount text-danger p-1 my-2  ">$80/night</span>
+                   
+                    <div class="amenities">
+                        <span class="room-icons"><i class="text-primary fa fa-bed" aria-hidden="true"></i> 1 bed</span>
+                        <span class="room-icons"><i class="fa fa-tint text-primary" aria-hidden="true"></i> 1 AC</span>
+                        <span class="room-icons"><i class="fa fa-desktop text-primary" aria-hidden="true"></i> 1 television</span>
+
+                    </div>
+                    
+
+
+                    
+                </div>
+                
+             </div>
+             <!--item two end-->
+
+             <!--item three start-->
+             <div data-aos="fade-left" class=" item rounded border pb-2">
+                <div class="img">
+                    <img src="img/pexels-quang-nguyen-vinh-14025032.jpg" alt="" />
+                    <div class="bottom-left"><button class="btn btn-primary btn-sm">Book Now</button></div>
+                </div>
+               
+                <div class="  text-center ">
+                    <h4 class="room-name">Executive</h4>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <span class=" room-amount text-danger p-1 my-2  ">$80/night</span>
+                   
+                    <div class="amenities">
+                        <span class="room-icons"><i class="text-primary fa fa-bed" aria-hidden="true"></i> 1 bed</span>
+                        <span class="room-icons"><i class="fa fa-tint text-primary" aria-hidden="true"></i> 1 AC</span>
+                        <span class="room-icons"><i class="fa fa-desktop text-primary" aria-hidden="true"></i> 1 television</span>
+
+                    </div>
+                    
+
+
+                    
+                </div>
+                
+             </div>
+             <!--item three end-->
+             
+           </div>  
+         </div>
+     <!---Our Rooms start end-->
+
+    </div>
+    <!---Our Rooms end -->
+
+    <!--about section start-->
+    <div class="about border">
+        <center><h4 data-aos="fade-left" class=" room-head text-center">About us</h4></center>
+     <div class="container-fluid">
+        <div class="row ">
+            <div class="col-sm-6 ">
+                <div class="row">
+                    <div  data-aos="fade-left" class="col-sm-6 my-2 about-text-b ">
+                        <i class="fa bed fa-bed" aria-hidden="true"></i>
+                        <h5 class="he">Cozy Room</h5>
+                        <p> Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    </div>
+                    <div  data-aos="fade-left" class="col-sm-6 about-text">
+                        <img style="width: 100%;" src="img/img4.jpg" alt="">
+                    </div>
+                    <div   data-aos="fade-left"class="col-sm-6 about-text">
+                        <img style="width: 100%;" src="img/img2.jpg" alt="">
+                    </div>
+                    <div  data-aos="fade-left" class="col-sm-6 my-2 about-text-b ">
+                        <i class="fa bed fa-home" aria-hidden="true"></i>
+                        <h5 class="he"> Special Offers</h5>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-left" class="col-sm-6 about-show">
+                <h6>Unwind A Hotel Booking Agency</h6>
+                <p>
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                </p>
+
+                <a class=" btn warning mb-4 text-center w-25 " type="button" href="#" data-toggle="modal" data-target="#myModal">Book now</a>
+            </div>
+        </div>
+     </div>
+    </div>
+    <!--about section start-->
+
+    <!---Our Services section start-->
+    <div class="container-fluid mt-4 ">
+        <center><h4 data-aos="fade-left" class=" room-head text-center">Explore Our Hotel Services
+        </h4></center>
+        <div class="row">
+            <div class="col-sm-2 service text-center">
+                <img class="" src="img/pool-ladder-icon.png" alt="">
+                <h6>Swimming Pool</h6>
+            </div>
+            <div class="col-sm-2 service   text-center">
+                <img class="" src="img/pasta-icon.png" alt="">
+                <h6>27/7 Restaurant</h6>
+            </div>
+            <div class="col-sm-2 service  text-center">
+                <img class="" src="img/team-meeting-icon.png" alt="">
+                <h6>Conferences</h6>
+            </div>
+            <div class="col-sm-2 service  text-center">
+                <img class="" src="img/24-hours-phone-support-icon.png" alt="">
+                <h6>24 hours support</h6>
+            </div>
+        </div>
+    </div>
+    <!---Our Services section end-->
+
+    <!--Image Gallary start-->
+    <div id="gallery" class="container-fluid  mt-4 py-3">
+        <center><h4 data-aos="fade-left" class=" room-head text-center">Gallary</h4></center>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+               <a href="img/confe.jpg" target="_blank"> <img src="img/confe.jpg" alt="image1"></a>
+            </div>
+            <div class="item">
+               <a href="img/img1.jpg"><img src="img/img1.jpg" alt="image1"></a>
+            </div>
+            <div class="item">
+               <a href="img/img2.jpg"  target="_blank"></a> <img src="img/img2.jpg" alt="image1"></a>
+            </div>
+            <div class="item">
+               <a href="img/img3.jpg"  target="_blank"> <img src="img/img3.jpg" alt="image1"></a>
+            </div>
+            <div class="item">
+               <a href="img/img4.jpg"  target="_blank"> <img src="img/img4.jpg" alt="image1"></a>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Image Gallary end-->
+
+
+    <!--video section start-->
+    <div class="video-section ">
+        <center><h4 data-aos="fade-left" class=" room-head text-center">Take a tour</h4></center>
+        <video class="vid" controls>
+            <source src="img/conf.mp4" type="video/mp4">
+            <source src="img/conf.mp4" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
+
+    </div>
+    <!--video section end-->
+
+    <!--custormer feedback start-->
+
+    <!--custormer feedback end-->
+  
+
+
+    <!---Main body end-->
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+       AOS.init();
+    </script>
+</body>
+</html>
