@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    
+        <!---Fontawesome CDN-->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+        <!-- jQuery library -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    
+        <!-- Popper JS -->
+        <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    
+        <!-- Latest compiled JavaScript -->
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="css/style.css" >
+    
+        <!--JS AOS-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    
+          <!-- owl carousel css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+      
+    <!-- owl carousel theme.css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">  
+    
+    <!-- owl carousel js file -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+    
+        <!--video play button cdn-->
+     
+      
+        <title>Gat media Hotel checin</title>
+        <link rel="icon" href="img/gatmedia.png" type="image/x-icon">
+    </head>
+    <body id="register">
+
+        <div class="user-register  text-center">
+            <h4>Checkin</h4>
+
+         
+        <p class="text-white">Complete Check in</p>
+        <p id="numdays2"  class="price"></p>
+        <form class="m-4 text-white" >
+            <div class="form-group">
+                <label for="inputEmail4">Check-in</label>
+                <input type="date" class="form-control" id="start" name="pickup_date" >
+              </div>
+            <div class="form-group">
+                <label for="inputEmail4">Check-out</label>
+                <input type="date" class="form-control" id="end" name="dropoff_date" >
+            </div>
+
+           
+            <div class="form-group">
+                <label for="inputState">Room</label>
+                <select id="inputState" class="form-control" onchange="GetDays()" >
+                  <option value="50" selected>room1</option>
+                  <option value="800" >room2</option>
+                  <option value="100" >room3</option>
+                  <option value="250">room4</option>
+                </select>
+            </div>
+           
+              <button onclick="GetDays()" class="btn btn-primary">Submit</button>
+    
+        </form>
+    
+        </div>
+    
+        
+        
+    </body>
+</html>
+
+<script type="text/javascript">
+    function GetDays(){
+            var start = new Date(document.getElementById("start").value);
+    
+            var end = new Date(document.getElementById("end").value);
+     
+            var room = document.getElementById("inputState").value;
+     
+            const days =Math.abs(end-start);
+            const ans= Math.ceil(days/ (1000*60*60*24));
+            const total=Math.ceil(ans*room)
+            if (total==NaN) {
+                total=0;
+            }
+            document.getElementById("numdays2").innerHTML="Amount Payable is $"+total;
+
+           
+    }
+   
+
+</script>
+<script>
+
+
+
+    var start = document.getElementById("start");
+var end = document.getElementById("end");
+
+start.addEventListener('change', function() {
+    if (start.value)
+        end.min = start.value;
+}, false);
+end.addEventLiseter('change', function() {
+    if (end.value)
+        start.max = end.value;
+}, false);
+
+</script>
